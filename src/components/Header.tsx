@@ -31,9 +31,14 @@ const Header = () => {
             <span className="inline-block w-1.5 h-1.5 bg-[#10b981] rounded-full shadow-[0_0_8px_#10b981]"></span>
             {t.beta}
           </div>
-          <button className="bg-transparent border border-[#38bdf8] text-[#38bdf8] py-2 px-5 rounded-md font-bold text-xs cursor-pointer shadow-[0_0_15px_rgba(56,189,248,0.15)] hover:bg-[#38bdf8]/5 transition-colors">
+          <a 
+            href="http://app.elixiti.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-transparent border border-[#38bdf8] text-[#38bdf8] py-2 px-5 rounded-md font-bold text-xs cursor-pointer shadow-[0_0_15px_rgba(56,189,248,0.15)] hover:bg-[#38bdf8]/5 transition-colors no-underline inline-block"
+          >
             {t.partnerLink}
-          </button>
+          </a>
         </div>
       </div>
     </nav>
