@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Funnel from '../components/Funnel';
+import Footer from '../components/Footer';
+---
+
+<Layout title="Elixiti - Operativna inteligenca">
+	<main class="min-h-screen flex flex-col">
+		<Header client:load />
+		<Hero client:load />
+		<Funnel client:load />
+		<Footer client:load />
+	</main>
+</Layout>
