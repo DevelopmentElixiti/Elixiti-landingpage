@@ -52,8 +52,8 @@ export const translations = {
     validation: "We validated the problem through more than 30 interviews. Interest in pilot use was confirmed by companies from different countries worldwide, confirming the global potential.",
     footer: "© 2026 Elixiti d.o.o. | The solution is currently being tested in a closed beta phase with strategic partners.",
     contact: "Contact:",
-    tableTitle: "Real-time Operational Data",
-    tableDesc: "The table below displays current data from the n8n workflow, optimizing staff allocation and reducing operational risks.",
+    tableTitle: "Overview of Public Cleaning Tenders in Slovenia",
+    tableDesc: "Automated real-time monitoring of data from the e-Naročanje portal: a comprehensive overview of current tenders, participating companies, and selected winners in the cleaning sector.",
     // Funnel Translations
     f1: "1. PROBLEM / INPUT",
     f1a: "ANALYTICS &",
@@ -87,8 +87,8 @@ export const translations = {
     validation: "Wir haben das Problem in über 30 Interviews validiert. Das Interesse an einer Pilotnutzung wurde von Unternehmen aus verschiedenen Ländern weltweit bestätigt, was das globale Potenzial unterstreicht.",
     footer: "© 2026 Elixiti d.o.o. | Die Lösung wird derzeit in einer geschlossenen Beta-Phase mit strategichen Partnern getestet.",
     contact: "Kontakt:",
-    tableTitle: "Operative Daten in Echtzeit",
-    tableDesc: "Die folgende Tabelle zeigt aktuelle Daten des n8n-Workflows, der die Personalzuweisung optimiert und operative Risiken reduziert.",
+    tableTitle: "Übersicht der öffentlichen Reinigungsausschreibungen in Slowenien",
+    tableDesc: "Automatisierte Echtzeit-Überwachung der Daten des Portals e-Naročanje: ein umfassender Überblick über aktuelle Ausschreibungen, teilnehmende Unternehmen und ausgewählte Gewinner im Reinigungssektor.",
     // Funnel Translations
     f1: "1. PROBLEM / INPUT",
     f1a: "ANALYTIK &",
