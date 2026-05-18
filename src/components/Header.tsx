@@ -8,9 +8,9 @@ const Header = () => {
 
   return (
     <nav className="flex justify-between items-center py-5 px-10 border-b border-white/5 bg-[#0A192F]/90 sticky top-0 z-50 backdrop-blur-sm">
-      <div className="text-2xl font-black text-white tracking-wider">
+      <a href="/" className="text-2xl font-black text-white tracking-wider no-underline">
         ELIXITI<span className="text-[#38bdf8]">.</span>
-      </div>
+      </a>
       <div className="flex items-center gap-8">
         <div className="flex gap-4 text-xs font-semibold">
           {(['SLO', 'ENG', 'GER'] as Language[]).map((l) => (

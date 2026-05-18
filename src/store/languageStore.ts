@@ -17,6 +17,7 @@ export const translations = {
     validation: "Problem smo validirali z več kot 30 razgovori. Interes za pilotno uporabo so potrdila podjetja iz različnih držav sveta, kar potrjuje globalni potencial.",
     footer: "© 2026 Elixiti d.o.o. | Rešitev se trenutno testira v zaprti beta fazi pri strateških partnerjih.",
     contact: "Kontakt:",
+    tenders: "Razpisi",
     tableTitle: "Pregled javnih razpisov za čiščenje v Sloveniji",
     tableDesc: "Avtomatizirano spremljanje podatkov s portala e-Naročanje v realnem času: celovit pregled nad aktualnimi razpisi, sodelujočimi podjetji in izbranimi zmagovalci na področju čiščenja.",
     columnMapping: {
@@ -63,6 +64,7 @@ export const translations = {
     validation: "We validated the problem through more than 30 interviews. Interest in pilot use was confirmed by companies from different countries worldwide, confirming the global potential.",
     footer: "© 2026 Elixiti d.o.o. | The solution is currently being tested in a closed beta phase with strategic partners.",
     contact: "Contact:",
+    tenders: "Tenders",
     tableTitle: "Overview of Public Cleaning Tenders in Slovenia",
     tableDesc: "Automated real-time monitoring of data from the e-Naročanje portal: a comprehensive overview of current tenders, participating companies, and selected winners in the cleaning sector.",
     columnMapping: {
@@ -109,6 +111,7 @@ export const translations = {
     validation: "Wir haben das Problem in über 30 Interviews validiert. Das Interesse an einer Pilotnutzung wurde von Unternehmen aus verschiedenen Ländern weltweit bestätigt, was das globale Potenzial unterstreicht.",
     footer: "© 2026 Elixiti d.o.o. | Die Lösung wird derzeit in einer geschlossenen Beta-Phase mit strategichen Partnern getestet.",
     contact: "Kontakt:",
+    tenders: "Ausschreibungen",
     tableTitle: "Übersicht der öffentlichen Reinigungsausschreibungen in Slowenien",
     tableDesc: "Automatisierte Echtzeit-Überwachung der Daten des Portals e-Naročanje: ein umfassender Überblick über aktuelle Ausschreibungen, teilnehmende Unternehmen und ausgewählte Gewinner im Reinigungssektor.",
     columnMapping: {

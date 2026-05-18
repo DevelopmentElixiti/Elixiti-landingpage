@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header';
+import DataTable from '../components/DataTable';
+import Footer from '../components/Footer';
+---
+
+<Layout title="Elixiti - Razpisi čiščenje">
+	<main class="min-h-screen flex flex-col bg-[#0A192F]">
+		<Header client:load />
+        <div class="pt-24 pb-12">
+		    <DataTable client:load />
+        </div>
+		<Footer client:load />
+	</main>
+</Layout>
