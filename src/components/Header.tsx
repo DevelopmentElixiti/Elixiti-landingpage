@@ -14,7 +14,7 @@ const Header = () => {
       <div className="flex items-center gap-8">
         <div className="hidden lg:flex items-center gap-6">
           <a 
-            href="/razpisi-čiščenje" 
+            href="/razpisiciscenje" 
             className="text-sm font-bold text-[#94a3b8] hover:text-[#38bdf8] transition-colors no-underline"
           >
             {t.tenders}
