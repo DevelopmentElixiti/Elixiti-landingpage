@@ -19,6 +19,17 @@ export const translations = {
     contact: "Kontakt:",
     tableTitle: "Pregled javnih razpisov za čiščenje v Sloveniji",
     tableDesc: "Avtomatizirano spremljanje podatkov s portala e-Naročanje v realnem času: celovit pregled nad aktualnimi razpisi, sodelujočimi podjetji in izbranimi zmagovalci na področju čiščenja.",
+    columnMapping: {
+      "JN Številka": "JN Številka",
+      "Naročnik": "Naročnik",
+      "Naziv": "Naziv",
+      "Datum Objave": "Datum Objave",
+      "Rok": "Rok",
+      "Link do objave": "Povezava do objave",
+      "Zmagovalec": "Zmagovalec",
+      "Ponudniki": "Ponudniki",
+      "Link do PDF": "Povezava do PDF"
+    },
     // Funnel Translations
     f1: "1. PROBLEM / VHOD",
     f1a: "ANALITIKA &",
@@ -54,6 +65,17 @@ export const translations = {
     contact: "Contact:",
     tableTitle: "Overview of Public Cleaning Tenders in Slovenia",
     tableDesc: "Automated real-time monitoring of data from the e-Naročanje portal: a comprehensive overview of current tenders, participating companies, and selected winners in the cleaning sector.",
+    columnMapping: {
+      "JN Številka": "Tender ID",
+      "Naročnik": "Client",
+      "Naziv": "Title",
+      "Datum Objave": "Date Published",
+      "Rok": "Deadline",
+      "Link do objave": "Tender Link",
+      "Zmagovalec": "Winner",
+      "Ponudniki": "Bidders",
+      "Link do PDF": "PDF Link"
+    },
     // Funnel Translations
     f1: "1. PROBLEM / INPUT",
     f1a: "ANALYTICS &",
@@ -89,6 +111,17 @@ export const translations = {
     contact: "Kontakt:",
     tableTitle: "Übersicht der öffentlichen Reinigungsausschreibungen in Slowenien",
     tableDesc: "Automatisierte Echtzeit-Überwachung der Daten des Portals e-Naročanje: ein umfassender Überblick über aktuelle Ausschreibungen, teilnehmende Unternehmen und ausgewählte Gewinner im Reinigungssektor.",
+    columnMapping: {
+      "JN Številka": "Ausschreibungsnummer",
+      "Naročnik": "Auftraggeber",
+      "Naziv": "Titel",
+      "Datum Objave": "Veröffentlichungsdatum",
+      "Rok": "Frist",
+      "Link do objave": "Ausschreibungslink",
+      "Zmagovalec": "Gewinner",
+      "Ponudniki": "Bieter",
+      "Link do PDF": "PDF-Link"
+    },
     // Funnel Translations
     f1: "1. PROBLEM / INPUT",
     f1a: "ANALYTIK &",
