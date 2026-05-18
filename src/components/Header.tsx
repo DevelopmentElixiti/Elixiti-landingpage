@@ -12,14 +12,6 @@ const Header = () => {
         ELIXITI<span className="text-[#38bdf8]">.</span>
       </a>
       <div className="flex items-center gap-8">
-        <div className="hidden lg:flex items-center gap-6">
-          <a 
-            href="/razpisiciscenje" 
-            className="text-sm font-bold text-[#94a3b8] hover:text-[#38bdf8] transition-colors no-underline"
-          >
-            {t.tenders}
-          </a>
-        </div>
         <div className="flex gap-4 text-xs font-semibold">
           {(['SLO', 'ENG', 'GER'] as Language[]).map((l) => (
             <span
