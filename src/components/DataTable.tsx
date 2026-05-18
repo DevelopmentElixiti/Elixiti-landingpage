@@ -3,7 +3,7 @@ import Papa from "papaparse";
 import { useStore } from '@nanostores/react';
 import { languageStore, translations } from '../store/languageStore';
 
-const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1O5iMSFZ09rzF9_soBdYynzSk9z2jUclgTCfsipCEOTw/export?format=csv&gid=0";
+const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1O5iMSFZ09rzF9_soBdYynzSk9z2jUclgTCfsipCEOTw/gviz/tq?tqx=out:csv&gid=0";
 
 const DataTable = () => {
   const [rows, setRows] = useState<any[]>([]);
