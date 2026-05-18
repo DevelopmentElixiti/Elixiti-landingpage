@@ -17,6 +17,8 @@ export const translations = {
     validation: "Problem smo validirali z več kot 30 razgovori. Interes za pilotno uporabo so potrdila podjetja iz različnih držav sveta, kar potrjuje globalni potencial.",
     footer: "© 2026 Elixiti d.o.o. | Rešitev se trenutno testira v zaprti beta fazi pri strateških partnerjih.",
     contact: "Kontakt:",
+    tableTitle: "Pregled javnih razpisov za čiščenje v Sloveniji",
+    tableDesc: "Avtomatizirano spremljanje podatkov s portala e-Naročanje v realnem času: celovit pregled nad aktualnimi razpisi, sodelujočimi podjetji in izbranimi zmagovalci na področju čiščenja.",
     // Funnel Translations
     f1: "1. PROBLEM / VHOD",
     f1a: "ANALITIKA &",
@@ -50,6 +52,8 @@ export const translations = {
     validation: "We validated the problem through more than 30 interviews. Interest in pilot use was confirmed by companies from different countries worldwide, confirming the global potential.",
     footer: "© 2026 Elixiti d.o.o. | The solution is currently being tested in a closed beta phase with strategic partners.",
     contact: "Contact:",
+    tableTitle: "Real-time Operational Data",
+    tableDesc: "The table below displays current data from the n8n workflow, optimizing staff allocation and reducing operational risks.",
     // Funnel Translations
     f1: "1. PROBLEM / INPUT",
     f1a: "ANALYTICS &",
@@ -81,8 +85,10 @@ export const translations = {
     featureDesc1: "ist operative Intelligenz für personalintensive Unternehmen.",
     featureDesc2: "Mitarbeiterausfälle in diesen Unternehmen erreichen täglich 15-20% der Belegschaft aufgrund von Krankmeldungen und Urlaub, was Manager oft mehr als 30% ihrer Zeit für den manuellen Ersatz kostet. Die Folge sind operative Fehler und zusätzliche Kosten.",
     validation: "Wir haben das Problem in über 30 Interviews validiert. Das Interesse an einer Pilotnutzung wurde von Unternehmen aus verschiedenen Ländern weltweit bestätigt, was das globale Potenzial unterstreicht.",
-    footer: "© 2026 Elixiti d.o.o. | Die Lösung wird derzeit in einer geschlossenen Beta-Phase mit strategischen Partnern getestet.",
+    footer: "© 2026 Elixiti d.o.o. | Die Lösung wird derzeit in einer geschlossenen Beta-Phase mit strategichen Partnern getestet.",
     contact: "Kontakt:",
+    tableTitle: "Operative Daten in Echtzeit",
+    tableDesc: "Die folgende Tabelle zeigt aktuelle Daten des n8n-Workflows, der die Personalzuweisung optimiert und operative Risiken reduziert.",
     // Funnel Translations
     f1: "1. PROBLEM / INPUT",
     f1a: "ANALYTIK &",
