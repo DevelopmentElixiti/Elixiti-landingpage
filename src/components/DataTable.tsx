@@ -59,8 +59,31 @@ const DataTable = () => {
     );
   }
 
-  const columns = Object.keys(rows[0]);
   const columnMapping = (t as any).columnMapping || {};
+  
+  // 1. Identify which columns have at least one non-empty value
+  const activeColumns = Object.keys(rows[0] || {}).filter(column => {
+    // Only keep columns that have at least one row with data
+    const hasData = rows.some(row => row[column] && String(row[column]).trim() !== "");
+    // Also check if it's a generic header like "_1", if so, only keep if it has data
+    if (column.startsWith("_") && !isNaN(Number(column.substring(1)))) {
+      return hasData;
+    }
+    return true;
+  });
+
+  // 2. Map generic headers to friendly names by index if necessary
+  const getHeaderName = (column: string, index: number) => {
+    if (columnMapping[column]) return columnMapping[column];
+    
+    // If we have generic headers like _1, _2, try to map by index
+    const expectedHeaders = Object.values(columnMapping);
+    if (column.startsWith("_") && expectedHeaders[index]) {
+      return expectedHeaders[index];
+    }
+    
+    return column;
+  };
 
   return (
     <section className="px-6 md:px-10 pb-24 max-w-[1300px] mx-auto relative z-10">
@@ -84,9 +107,9 @@ const DataTable = () => {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gradient-to-r from-[#38bdf8]/10 to-transparent border-b border-white/10">
-                  {columns.map((column) => (
-                    <th key={column} className="px-8 py-6 text-xs font-black text-[#38bdf8] uppercase tracking-[0.2em]">
-                      {columnMapping[column] || column}
+                  {activeColumns.map((column, idx) => (
+                    <th key={column} className="px-8 py-6 text-xs font-black text-[#38bdf8] uppercase tracking-[0.2em] whitespace-nowrap">
+                      {getHeaderName(column, idx)}
                     </th>
                   ))}
                 </tr>
@@ -97,18 +120,36 @@ const DataTable = () => {
                     key={rowIndex} 
                     className="hover:bg-white/[0.03] transition-all duration-300 group/row"
                   >
-                    {columns.map((column, colIndex) => (
-                      <td 
-                        key={column} 
-                        className={`px-8 py-5 text-sm ${
-                          colIndex === 0 
-                            ? "text-white font-bold" 
-                            : "text-[#cbd5e1] font-medium"
-                        } group-hover/row:text-[#38bdf8] transition-colors duration-300`}
-                      >
-                        {row[column]}
-                      </td>
-                    ))}
+                    {activeColumns.map((column, colIndex) => {
+                      const value = row[column];
+                      const isLink = typeof value === 'string' && (value.startsWith('http://') || value.startsWith('https://'));
+                      
+                      return (
+                        <td 
+                          key={column} 
+                          className={`px-8 py-5 text-sm ${
+                            colIndex === 0 
+                              ? "text-white font-bold" 
+                              : "text-[#cbd5e1] font-medium"
+                          } group-hover/row:text-[#38bdf8] transition-colors duration-300`}
+                        >
+                          {isLink ? (
+                            <a 
+                              href={value} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-[#38bdf8] hover:underline inline-flex items-center gap-1 font-bold"
+                            >
+                              {column.toLowerCase().includes('link') || column.toLowerCase().includes('povezava') || getHeaderName(column, colIndex).toLowerCase().includes('link') || getHeaderName(column, colIndex).toLowerCase().includes('povezava') ? (
+                                <>
+                                  Odpri <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                                </>
+                              ) : value}
+                            </a>
+                          ) : value}
+                        </td>
+                      );
+                    })}
                   </tr>
                 ))}
               </tbody>
