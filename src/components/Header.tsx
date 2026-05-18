@@ -7,12 +7,12 @@ const Header = () => {
   const t = translations[lang];
 
   return (
-    <nav className="flex justify-between items-center py-5 px-10 border-b border-white/5 bg-[#0A192F]/90 sticky top-0 z-50 backdrop-blur-sm">
+    <nav className="flex justify-between items-center py-5 px-4 md:px-10 border-b border-white/5 bg-[#0A192F]/90 sticky top-0 z-50 backdrop-blur-sm">
       <a href="/" className="text-2xl font-black text-white tracking-wider no-underline">
         ELIXITI<span className="text-[#38bdf8]">.</span>
       </a>
-      <div className="flex items-center gap-8">
-        <div className="flex gap-4 text-xs font-semibold">
+      <div className="flex items-center gap-3 md:gap-8">
+        <div className="flex gap-3 md:gap-4 text-[10px] md:text-xs font-semibold">
           {(['SLO', 'ENG', 'GER'] as Language[]).map((l) => (
             <span
               key={l}
@@ -35,7 +35,7 @@ const Header = () => {
             href="http://app.elixiti.com/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-transparent border border-[#38bdf8] text-[#38bdf8] py-2 px-5 rounded-md font-bold text-xs cursor-pointer shadow-[0_0_15px_rgba(56,189,248,0.15)] hover:bg-[#38bdf8]/5 transition-colors no-underline inline-block"
+            className="bg-transparent border border-[#38bdf8] text-[#38bdf8] py-2 px-3 md:px-5 rounded-md font-bold text-[10px] md:text-xs cursor-pointer shadow-[0_0_15px_rgba(56,189,248,0.15)] hover:bg-[#38bdf8]/5 transition-colors no-underline inline-block text-center min-w-max"
           >
             {t.partnerLink}
           </a>
