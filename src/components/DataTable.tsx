@@ -60,6 +60,7 @@ const DataTable = () => {
   }
 
   const columns = Object.keys(rows[0]);
+  const columnMapping = (t as any).columnMapping || {};
 
   return (
     <section className="px-6 md:px-10 pb-24 max-w-[1300px] mx-auto relative z-10">
@@ -85,7 +86,7 @@ const DataTable = () => {
                 <tr className="bg-gradient-to-r from-[#38bdf8]/10 to-transparent border-b border-white/10">
                   {columns.map((column) => (
                     <th key={column} className="px-8 py-6 text-xs font-black text-[#38bdf8] uppercase tracking-[0.2em]">
-                      {column}
+                      {columnMapping[column] || column}
                     </th>
                   ))}
                 </tr>
